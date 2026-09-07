@@ -269,7 +269,7 @@
       inset: 0;
       display: grid;
       place-items: center;
-      padding: 24px 20px;
+      padding: 24px 14px;
       overflow-y: auto;
       background:
         linear-gradient(rgba(8, 28, 23, 0.84), rgba(8, 28, 23, 0.92)),
@@ -287,10 +287,11 @@
     }
 
     .reveal-content {
-      width: min(560px, 100%);
-      transform: translateY(16px);
-      opacity: 0;
-      transition: transform 800ms 350ms ease, opacity 800ms 350ms ease;
+  width: min(560px, 92vw);
+  max-width: 100%;
+  transform: translateY(16px);
+  opacity: 0;
+  transition: transform 800ms 350ms ease, opacity 800ms 350ms ease;
     }
 
     .reveal.visible .reveal-content {
@@ -298,12 +299,12 @@
       opacity: 1;
     }
 
-    .reveal-names {
-      margin: 15px 0 2px;
-      font-family: "Cormorant Garamond", serif;
-      font-size: clamp(48px, 13vw, 82px);
-      font-weight: 600;
-      line-height: 0.95;
+   .reveal-names {
+  margin: 15px 0 8px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(34px, 9vw, 58px);
+  font-weight: 600;
+  line-height: 1;
     }
 
     .reveal-news {
@@ -333,13 +334,13 @@
     }
 
     .date {
-      margin-bottom: 28px;
-      font-family: "Cormorant Garamond", serif;
-      font-size: clamp(28px, 7vw, 48px);
-      font-weight: 600;
-      letter-spacing: 0.02em;
-      line-height: 1;
-      white-space: nowrap;
+  margin-bottom: 28px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(20px, 5.8vw, 38px);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.1;
+  white-space: nowrap;
     }
 
     .save-label {
